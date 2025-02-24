@@ -6,8 +6,8 @@ import java.util.Collections;
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Diogo Alves
+ * @version 2025.02.24
  */
 public class MusicOrganizer
 {
