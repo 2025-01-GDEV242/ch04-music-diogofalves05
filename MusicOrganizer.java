@@ -60,6 +60,18 @@ public class MusicOrganizer
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
         }
     }
+    
+    /**
+     * Select and play a single random track.
+     */
+    public void randomPlay()
+    {
+        if(tracks.size() > 0) {
+            Random rand = new Random();
+            int index = rand.nextInt(tracks.size());
+            playTrack(index);
+        }
+    }
 
     /**
      * Return the number of tracks in the collection.
