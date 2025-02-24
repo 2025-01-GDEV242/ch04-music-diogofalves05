@@ -75,6 +75,18 @@ public class MusicOrganizer
     }
     
     /**
+     * Play all tracks once in a random order.
+     */
+    public void randomPlayAll()
+    {
+        ArrayList<Track> leftToPlay = new ArrayList<>(tracks);
+        Collections.shuffle(leftToPlay);
+        for(Track t : leftToPlay) {
+            player.playSample(t.getFilename());
+        }
+    }
+    
+    /**
      * Return the number of tracks in the collection.
      * @return The number of tracks in the collection.
      */
